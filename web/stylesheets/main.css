@@ -34,3 +34,99 @@
 .jumbotron .lang-logo img {
   max-width: 100%;
 }
+/* 遊戲版面容器 */
+.game-board-container {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    color: #e0e0e0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* 6 格裝備欄位區塊 */
+.equip-slots-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* 單一裝備格 */
+.equip-slot {
+    width: 64px;
+    height: 64px;
+    background-color: #2c2c2c;
+    border: 2px solid #555;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.equip-slot:hover {
+    border-color: #f1c40f;
+    transform: scale(1.05);
+}
+
+.equip-slot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.empty-icon {
+    font-size: 24px;
+    color: #777;
+}
+
+/* 裝備選擇庫 */
+.equipment-pool {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+}
+
+.pool-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pool-item {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+.pool-item:hover {
+    border-color: #f1c40f;
+}
+
+/* 關閉按鈕 */
+.close-btn {
+    background-color: #B01302;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    background-color: #8a0f02;
+}
